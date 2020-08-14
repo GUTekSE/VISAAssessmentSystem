@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+
+
+<h2>Administrator</h2>
+
+<div class="col-md-6">
+    <h4>Data File Management</h4>
+    <div class="list-group">
+        @Html.ActionLink("Country", "Index", "Country", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Course", "Index", "Course", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Job", "Index", "Job", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Profession", "Index", "Profession", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Requirement", "Index", "Requirement", null, new { @class = "list-group-item" })
+        @Html.ActionLink("RequirementCategory", "Index", "RequirementCategory", null, new { @class = "list-group-item" })
+
+    </div>
+</div>
+
+<div class="col-md-6">
+    <h4>User Management</h4>
+    <div class="list-group">
+        @Html.ActionLink("User", "Index", "UserManager", null, new { @class = "list-group-item" })
+    </div>
+</div>
+<div class="col-md-12 clearfix"></div>
+

@@ -1,0 +1,200 @@
+﻿@model VISAAssessmentSystem.Core.Models.Client
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNo2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNo2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaritalStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfChildren)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfChildren)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profession)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profession)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearGraduated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearGraduated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Degree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Degree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DegreeStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DegreeStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DegreeResult)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DegreeResult)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PresentJob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PresentJob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearExperience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearExperience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PresentAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PresentAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PresentAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PresentAddress2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhilAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhilAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhilAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhilAddress2)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,77 @@
+﻿@model VISAAssessmentSystem.Core.ViewModels.SchoolViewModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SchoolViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.School.SchoolId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.School.SchoolId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.School.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.School.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Country.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.School.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.School.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.School.Manager)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.School.Manager)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.School.ContactNo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.School.ContactNo)
+        </dd>
+        @*<dt>
+            @Html.DisplayNameFor(model => model.School.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.School.Date)
+        </dd>*@
+        <dt>
+            @Html.DisplayNameFor(model => model.School.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.School.CreatedAt)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

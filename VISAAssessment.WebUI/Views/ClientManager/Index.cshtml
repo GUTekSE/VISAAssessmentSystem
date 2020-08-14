@@ -1,0 +1,160 @@
+﻿@model IEnumerable<VISAAssessmentSystem.Core.Models.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+    <h2>Client List</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.RecordNo)*@
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        @*<th>
+           @Html.DisplayNameFor(model => model.Gender)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNo1)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.MobileNo2)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoOfChildren)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Profession)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Course)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearGraduated)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Degree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DegreeStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DegreeResult)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PresentJob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearExperience)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.PresentAddress1)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.PresentAddress2)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.PhilAddress1)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.PhilAddress2)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.RecordNo)*@
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            @*<td>
+                @Html.HiddenFor(modelItem => item.Gender)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MobileNo1)
+            </td>
+            @*<td>
+                @Html.HiddenFor(modelItem => item.MobileNo2)
+            </td>*@
+            @*<td>
+                @Html.HiddenFor(modelItem => item.MaritalStatus)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.NoOfChildren)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Profession)
+            </td>
+            @*<td>
+                @Html.HiddenFor(modelItem => item.Course)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.YearGraduated)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.Degree)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.DegreeStatus)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.DegreeResult)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.PresentJob)
+            </td>
+            <td>
+                @Html.HiddenFor(modelItem => item.YearExperience)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PresentAddress1)
+            </td>
+            @*<td>
+                @Html.HiddenFor(modelItem => item.PresentAddress2)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.PhilAddress1)
+            </td>
+            @*<td>
+                @Html.HiddenFor(modelItem => item.PhilAddress2)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+

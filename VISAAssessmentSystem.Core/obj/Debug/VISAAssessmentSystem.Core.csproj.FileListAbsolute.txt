@@ -1,0 +1,6 @@
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\bin\Debug\VISAAssessmentSystem.Core.dll
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\bin\Debug\VISAAssessmentSystem.Core.pdb
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\obj\Debug\VISAAssessmentSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\obj\Debug\VISAAssessmentSystem.Core.dll
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\obj\Debug\VISAAssessmentSystem.Core.pdb
+C:\Users\Gilson\source\repos\VISAAssessmentSystem\VISAAssessmentSystem.Core\obj\Debug\VISAAssessmentSystem.Core.csprojAssemblyReference.cache
